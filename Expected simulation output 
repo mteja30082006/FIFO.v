@@ -1,0 +1,59 @@
+FIFO SIMULATION
+===============
+
+FIFO Depth  = 8
+Data Width  = 8 bits
+
+TEST 1: WRITE DATA
+------------------
+
+WRITE: Data = 10
+WRITE: Data = 20
+WRITE: Data = 30
+WRITE: Data = 40
+
+
+TEST 2: READ DATA
+-----------------
+
+READ: Data = 10
+READ: Data = 20
+READ: Data = 30
+READ: Data = 40
+
+
+TEST 3: WRITE DATA
+------------------
+
+WRITE: Data = 50
+WRITE: Data = 60
+WRITE: Data = 70
+
+
+TEST 4: READ DATA
+-----------------
+
+READ: Data = 50
+READ: Data = 60
+READ: Data = 70
+
+
+TEST 5: RESET
+-------------
+
+FIFO reset successful
+COUNT = 0
+EMPTY = 1
+FULL = 0
+
+
+FIFO ORDER CHECK
+----------------
+
+Written:
+10 → 20 → 30 → 40 → 50 → 60 → 70
+
+Read:
+10 → 20 → 30 → 40 → 50 → 60 → 70
+
+RESULT: PASS
